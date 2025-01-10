@@ -1,4 +1,4 @@
-package org.moozeh.learn_spring_framework.game;
+package org.moozeh.learn_spring_framework.app01_game.game;
 
 public class MarioGame implements GamingConsole {
 

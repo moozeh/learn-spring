@@ -1,4 +1,4 @@
-package org.moozeh.learn_spring_framework;
+package org.moozeh.learn_spring_framework.app02_helloworld;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

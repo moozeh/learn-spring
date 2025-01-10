@@ -1,7 +1,7 @@
-package org.moozeh.learn_spring_framework;
+package org.moozeh.learn_spring_framework.app01_game;
 
-import org.moozeh.learn_spring_framework.game.GameRunner;
-import org.moozeh.learn_spring_framework.game.PacmanGame;
+import org.moozeh.learn_spring_framework.app01_game.game.GameRunner;
+import org.moozeh.learn_spring_framework.app01_game.game.PacmanGame;
 
 public class App01GamingBasicJava {
     public static void main(String[] args) {
