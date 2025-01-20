@@ -11,9 +11,6 @@ class A {
 
 }
 
-
-
-
 @Component
 @Lazy // Lazy 옵션을 달아줌으로써, 사용되지 않을때는 굳이 자동연결을 시켜주지 않도록 할 수 있다.
 class B {
