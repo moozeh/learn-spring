@@ -23,6 +23,8 @@ class PrototypeClass {
  * Normal - 컨텍스트에서 불러와지는 인스턴스는 항상 같다. (싱글톤) - IOC Container 당 하나.
  * Prototype - 컨텍스트에서 불러올 때마다 새로운 인스턴스를 생성하고 사용한다.
  * 
+ * Prototype은 어떤 의미에서 Stateful 하다고 볼 수 있다.
+ * 
  * 웹에서만 적용되는 특별한 스코프도 존재한다.
  * 
  * Request - 요청당 하나의 인스턴스로 고정한다.
