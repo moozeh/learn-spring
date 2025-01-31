@@ -1,11 +1,22 @@
-package org.moozeh.learn_spring.app15_h2_jdbc;
+package org.moozeh.learn_spring.app16_jpa;
+
+import jakarta.persistence.*;
 
 /**
- * 이 Bean Repository 에 전달할 예정이다.
+ * jakarta.persistence.Entity 도 있고, org.hibernate.annotations 도 있다.
+ * 이는 결국 구현체가 hibernate 이기 때문이다.
+ *
+ * Entity는 데이터베이스와 매핑이 되는 Bean 이기 때문에, Primary 키가 존재해야할 것이다. @Id
  */
+
+@Entity(name="courses")
 public class Course {
+    @Id
     private long id;
+
+    @Column(name="name") // 같은 이름으로 매칭된다면 이 값(annotation 전체)은 사실 불필요하다.
     private String name;
+    // @Column(name="author")
     private String author;
 
     public Course() {}
@@ -13,18 +24,6 @@ public class Course {
     public Course(long id, String name, String author) {
         this.id = id;
         this.name = name;
-        this.author = author;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAuthor(String author) {
         this.author = author;
     }
 
